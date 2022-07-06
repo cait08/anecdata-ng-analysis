@@ -7,7 +7,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "watch": "ng build data-analysis --watch --configuration development",
     "test": "ng test"
   },
   "private": true,
@@ -23,6 +23,9 @@
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
+  },
+  "peerDependencies": {
+    "anecdata-ngcore": "^0.3.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.0.4",
