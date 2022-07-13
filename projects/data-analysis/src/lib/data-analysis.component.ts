@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-
 import { ObservationApiService } from 'anecdata-ngcore';
+
 import { map, Observable, Subject } from 'rxjs';
 @Component({
   selector: 'lib-data-analysis',
   template: `
     <p>
-      data-analysis works!
+      Data-analysis works! {{((posts | async) ?? []).length}} observations loaded from server.
     </p>
   `,
   styles: [
